@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="formProducto">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputId">Id del producto</label>
+                    <input type="text" name="inputId" id="inputId" class="form-control" placeholder="Id">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputNombre">Nombre del producto</label>
+                    <input type="text" name="inputNombre" id="inputNombre" class="form-control" placeholder="Nombre producto">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputTipo">Tipo de producto</label>
+                    <input type="text" name="inputTipo" id="inputTipo" class="form-control" placeholder="Tipo producto">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputCosto">Costo del producto</label>
+                    <input type="text" name="inputCosto" id="inputCosto" class="form-control" placeholder="Costo">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPrecio">Precio de venta</label>
+                    <input type="text" name="inputPrecio" id="inputPrecio" class="form-control"
+                        placeholder="Precio de venta">
+                </div>
+
+                <lable id="error"></lable>
+            </div>
+        </form>
+
+        <!--button type="button" class="btn btn-primary" id="Enviar">Enviar informacion</!--button-->
+    </div>
+    <br><br><br>
+    <div class="container" id="tablaMostrar">
+        <button type="button" class="btn btn-primary" id="Mostrar">Mostrar tabla</button>
+        <table class="table" id="MostrarProd"></table>
+    </div>
+
+    <script src="js/Producto.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
